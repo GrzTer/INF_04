@@ -1,0 +1,48 @@
+﻿<Window x:Class="Dodaj_Pracownika.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dodaj_Pracownika"
+        mc:Ignorable="d"
+        Title="Dodaj Pracownika Grzegorz Tereszkiewicz" Height="300" Width="637" Background="#B0C4DE">
+    <Grid>
+        <GroupBox Header="Dane Pracownika" Margin="39,33,0,0" HorizontalAlignment="Left" Width="258" Height="190" VerticalAlignment="Top">
+            <StackPanel Height="160">
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
+                    <Label Content="Imię" Width="100" Margin="10,0,0,0"/>
+                    <TextBox TextWrapping="Wrap" Name="ImieTextBox" Width="120"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <Label Content="Nazwisko" Width="100" Margin="10,0,0,0"/>
+                    <TextBox TextWrapping="Wrap" Name="NazwiskoTextBox" Width="120"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <Label Content="Stanowisko" Width="100" Margin="10,0,0,0"/>
+                    <ComboBox Name="StanowiskoComboBox" Width="120">
+                        <ComboBoxItem Content="Kierownik"/>
+                        <ComboBoxItem Content="Starszy programista"/>
+                        <ComboBoxItem Content="Młodszy programista"/>
+                        <ComboBoxItem Content="Tester"/>
+                    </ComboBox>
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Generowanie hasła" Margin="346,33,0,0" HorizontalAlignment="Left" Width="264" Height="190" VerticalAlignment="Top">
+            <StackPanel Height="160">
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,0" Width="227">
+                    <Label Content="Ile znaków?" Width="100" Margin="10,0,0,0"/>
+                    <TextBox TextWrapping="Wrap" Name="LiczZnak" Width="122"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="0,10,0,0">
+                    <CheckBox Content="Małe i wielkie litery" Name="MaleIWielkieLiteryCheckBox" IsChecked="True" Margin="20,0,0,0"/>
+                    <CheckBox Content="Cyfry" Name="CyfryCheckBox" Margin="20,20,0,0"/>
+                    <CheckBox Content="Znaki specjalne" Name="ZnakiSpecjalneCheckBox" Margin="20,20,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="0,20,0,0"/>
+                <Button Content="Generuj hasło" Width="80" Click="GenerujHaslo_Click" Background="#4682B4" Foreground="White"/>
+            </StackPanel>
+        </GroupBox>
+        <Button Content="Zatwierdź" Margin="0,0,241,10"  Click="Zatwierdz_Click" Background="#4682B4" Foreground="White" HorizontalAlignment="Right" Width="181" Height="21" VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>

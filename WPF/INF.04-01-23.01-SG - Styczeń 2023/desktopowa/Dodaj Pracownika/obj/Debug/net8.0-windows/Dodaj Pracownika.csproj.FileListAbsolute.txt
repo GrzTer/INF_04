@@ -1,0 +1,21 @@
+D:\INF_04\WPF\INF.04-01-23.01-SG - Styczeń 2023\desktopowa\Dodaj Pracownika\bin\Debug\net8.0-windows\Dodaj Pracownika.exe
+D:\INF_04\WPF\INF.04-01-23.01-SG - Styczeń 2023\desktopowa\Dodaj Pracownika\bin\Debug\net8.0-windows\Dodaj Pracownika.deps.json
+D:\INF_04\WPF\INF.04-01-23.01-SG - Styczeń 2023\desktopowa\Dodaj Pracownika\bin\Debug\net8.0-windows\Dodaj Pracownika.runtimeconfig.json
+D:\INF_04\WPF\INF.04-01-23.01-SG - Styczeń 2023\desktopowa\Dodaj Pracownika\bin\Debug\net8.0-windows\Dodaj Pracownika.dll
+D:\INF_04\WPF\INF.04-01-23.01-SG - Styczeń 2023\desktopowa\Dodaj Pracownika\bin\Debug\net8.0-windows\Dodaj Pracownika.pdb
+D:\INF_04\WPF\INF.04-01-23.01-SG - Styczeń 2023\desktopowa\Dodaj Pracownika\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\INF_04\WPF\INF.04-01-23.01-SG - Styczeń 2023\desktopowa\Dodaj Pracownika\obj\Debug\net8.0-windows\App.g.cs
+D:\INF_04\WPF\INF.04-01-23.01-SG - Styczeń 2023\desktopowa\Dodaj Pracownika\obj\Debug\net8.0-windows\Dodaj Pracownika_MarkupCompile.cache
+D:\INF_04\WPF\INF.04-01-23.01-SG - Styczeń 2023\desktopowa\Dodaj Pracownika\obj\Debug\net8.0-windows\Dodaj Pracownika_MarkupCompile.lref
+D:\INF_04\WPF\INF.04-01-23.01-SG - Styczeń 2023\desktopowa\Dodaj Pracownika\obj\Debug\net8.0-windows\MainWindow.baml
+D:\INF_04\WPF\INF.04-01-23.01-SG - Styczeń 2023\desktopowa\Dodaj Pracownika\obj\Debug\net8.0-windows\Dodaj Pracownika.g.resources
+D:\INF_04\WPF\INF.04-01-23.01-SG - Styczeń 2023\desktopowa\Dodaj Pracownika\obj\Debug\net8.0-windows\Dodaj Pracownika.GeneratedMSBuildEditorConfig.editorconfig
+D:\INF_04\WPF\INF.04-01-23.01-SG - Styczeń 2023\desktopowa\Dodaj Pracownika\obj\Debug\net8.0-windows\Dodaj Pracownika.AssemblyInfoInputs.cache
+D:\INF_04\WPF\INF.04-01-23.01-SG - Styczeń 2023\desktopowa\Dodaj Pracownika\obj\Debug\net8.0-windows\Dodaj Pracownika.AssemblyInfo.cs
+D:\INF_04\WPF\INF.04-01-23.01-SG - Styczeń 2023\desktopowa\Dodaj Pracownika\obj\Debug\net8.0-windows\Dodaj Pracownika.csproj.CoreCompileInputs.cache
+D:\INF_04\WPF\INF.04-01-23.01-SG - Styczeń 2023\desktopowa\Dodaj Pracownika\obj\Debug\net8.0-windows\Dodaj Pracownika.sourcelink.json
+D:\INF_04\WPF\INF.04-01-23.01-SG - Styczeń 2023\desktopowa\Dodaj Pracownika\obj\Debug\net8.0-windows\Dodaj Pracownika.dll
+D:\INF_04\WPF\INF.04-01-23.01-SG - Styczeń 2023\desktopowa\Dodaj Pracownika\obj\Debug\net8.0-windows\refint\Dodaj Pracownika.dll
+D:\INF_04\WPF\INF.04-01-23.01-SG - Styczeń 2023\desktopowa\Dodaj Pracownika\obj\Debug\net8.0-windows\Dodaj Pracownika.pdb
+D:\INF_04\WPF\INF.04-01-23.01-SG - Styczeń 2023\desktopowa\Dodaj Pracownika\obj\Debug\net8.0-windows\Dodaj Pracownika.genruntimeconfig.cache
+D:\INF_04\WPF\INF.04-01-23.01-SG - Styczeń 2023\desktopowa\Dodaj Pracownika\obj\Debug\net8.0-windows\ref\Dodaj Pracownika.dll
