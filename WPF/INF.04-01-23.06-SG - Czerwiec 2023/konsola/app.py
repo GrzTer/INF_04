@@ -9,12 +9,14 @@ N = 100  # Stała zakresu
 #                         n (int) - górna granica zakresu
 # wartość zwracana: brak
 # informacje: Inicjalizuje tablicę długości n+1, ustawia True dla 2..n,
-#             a 0 i 1 na False (przygotowanie do sita Eratostenesa). 
+#             a 0 i 1 na False (przygotowanie do sita Eratostenesa).
 # autor: Grzegorz Tereszkiewicz
 # ****************************************************
 def przygotuj_sito(sito: list[bool], n: int) -> None:
     if n < 2:
-        raise ValueError("Podaj odpowiedni zakres szukanych liczb pierwszych np. 2..100")
+        raise ValueError(
+            "Podaj odpowiedni zakres szukanych liczb pierwszych np. 2..100"
+        )
     sito.clear()
 
     sito.extend([True] * (n + 1))
@@ -22,12 +24,11 @@ def przygotuj_sito(sito: list[bool], n: int) -> None:
     sito[0] = sito[1] = False
 
 
-
 # ****************************************************
 # nazwa funkcji: wykonaj_sito
 # parametry wejściowe: sito (list[bool]) - lista bool przygotowana przez przygotuj sito
 # wartość zwracana: brak
-# informacje: Implementuje sito Erastotenesa: dla dzielników <= [√n]
+# informacje: Implementuje sito Eratostenesa: dla dzielników <= [√n]
 #             wykreśla (ustawia False) ich wielokrotności od i*i do n.
 # autor: Grzegorz Tereszkiewicz
 # ****************************************************
@@ -42,7 +43,7 @@ def wykonaj_sito(sito: list[bool]) -> None:
 # ****************************************************
 # nazwa funkcji: wypisz_liczby_pierwsze
 # parametry wejściowe: sito (list[bool]) - tablica liczb pierwszych
-#                         separator (str) - separator wypisywanych liczb pierwszych, domyślnie ustawiony na `,` 
+#                         separator (str) - separator wypisywanych liczb pierwszych, domyślnie ustawiony na `,`
 # wartość zwracana: brak
 # informacje: Wypisuje komunikat i liczby pierwsze z zakresu 2..n, odzielone podanym separatorem.
 # autor: Grzegorz Tereszkiewicz
