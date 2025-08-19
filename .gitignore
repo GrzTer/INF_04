@@ -1,0 +1,6 @@
+﻿################################################################################
+# Ten plik .gitignore został utworzony automatycznie przez Microsoft(R) Visual Studio.
+################################################################################
+
+/WPF/INF.04-01-23.06-SG - Czerwiec 2023/desktop/bin/Debug/net8.0-windows
+/WPF/INF.04-01-23.06-SG - Czerwiec 2023/desktop/obj
