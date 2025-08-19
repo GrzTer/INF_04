@@ -6,18 +6,14 @@ def wypelnij_tablice(n: int = 50, min_val: int = 1, max_val: int = 100) -> list[
 
 
 # ******************************************************
-#  nazwa funkcji: wartownik_search
-#  argumenty: tab (list[int]) - lista liczb całkowitych, w której prowadzone jest wyszukiwanie.
-#             x  (int) - szukana wartość całkowita.
-#  typ zwracany: int - indeks pierwszego wystąpienia x (indeks 0-based);
-#                w przypadku braku x w tab, zwracane jest -1.
-#  informacje: Algorytm liniowego przeszukiwania z wartownikiem (sentinel search).
-#               Na koniec listy tymczasowo dodawany jest wartownik równy x,
-#               pętla przechodzi kolejne elementy aż do trafienia x,
-#               po czym wartownik jest usuwany. Złożoność czasowa O(n).
+#  nazwa funkcji: przeszukaj_tablice
+#  argumenty: tab - (list[int]) Lista licz całkowitych pseudolosowych, w której prowadzone jest wyszukiwanie.
+#               x - (int) Szukana wartość całkowita.
+#  typ zwracany: (int), indeks pierwszego wystąpienia x (indeks 0-based) w przypadku braku `x` w `tab`, zwracane jest -1.
+#  informacje: Algorytm liniowego przeszukiwania z wartownikiem (sentinel search). Na koniec listy tymczasowo jest dodawany wartownik równy `x`, pętla przechodzi kolejne elementy aż do trafienia `x`, po czym wartownik jest usuwany. Złożoność czasowa O(n).
 #  autor: Grzegorz Tereszkiewicz
 # *****************************************************
-def wartownik_search(tab: list[int], x: int) -> int:
+def przeszukaj_tablice(tab: list[int], x: int) -> int:
     n = len(tab)
     tab.append(x)
     i = 0
@@ -43,15 +39,15 @@ def main():
         return
 
     tablica = wypelnij_tablice()
-    indeks = wartownik_search(tablica, x)
+    index = przeszukaj_tablice(tablica, x)
 
     print("\nTablica:")
     wyswietl_tablice(tablica)
 
-    if indeks == -1:
+    if index == -1:
         print(f"\nNie znaleziono wartości {x} w tablicy.")
     else:
-        print(f"\nZnaleziono wartość {x} pod indeksem {indeks}.")
+        print(f"\nZaleziono wartości {x} pod indeksem {index}.")
 
 
 if __name__ == "__main__":
