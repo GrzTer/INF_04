@@ -4,19 +4,17 @@ def Zadanie_1():
     def pobierz_pesel() -> str:
         while True:
             pesel = input("Podaj swój numer PESEL: ")
-            
+
             if len(pesel) == 11 and pesel.isdigit():
                 return pesel
             else:
                 print("Pesel powinien się składać z 11 cyfr.")
-
 
     def sprawdz_plec(pesel: str) -> str:
         if int(pesel[9]) % 2 == 0:
             return "Kobieta"
         else:
             return "Mężczyzna"
-
 
     def sprawdz_pesel(pesel: str) -> str:
         if len(pesel) != 11 or not pesel.isdigit():
@@ -32,12 +30,14 @@ def Zadanie_1():
 
     def main():
         pesel = pobierz_pesel()
-        
+
         print(f"Płeć: {sprawdz_plec(pesel)}")
 
         print(f"Numer PESEL jest {sprawdz_pesel(pesel)}")
 
     if __name__ == "__main__":
         main()
+
+
 if __name__ == "__main__":
     Zadanie_1()
