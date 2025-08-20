@@ -1,0 +1,5 @@
+System operacyjny: Windows 10
+
+Środowisko programistyczne: Visual Studio Code
+
+Język programowania: Python
