@@ -1,0 +1,28 @@
+img {
+  margin: 5px;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.foto {
+  display: inline-block;
+  margin: 10px;
+}
+
+.zdjecia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
