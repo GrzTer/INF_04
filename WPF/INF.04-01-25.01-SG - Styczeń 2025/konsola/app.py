@@ -6,7 +6,7 @@ opis klasy: Klasa reprezentująca tablicę liczb całkowitych, której rozmiar j
             filtrowanie liczb nieparzystych oraz obliczanie średniej arytmetycznej wartości w tablicy.
 
 nazwa metody: __init__
-opis metody: Konstruktor klasy Tablica. Przyjmuje rozmiar tablicy jako argument, generuje tablicę liczb całkowitych 
+opis metody: Konstruktor klasy Tablica. Przyjmuje rozmiar tablicy jako argument, generuje tablicę liczb całkowitych
              w zakresie od 1 do 1000 oraz ustawia rozmiar tablicy.
 parametry: rozmiarTablicy (int) - liczba elementów w tablicy
 zwracany typ i opis: brak
@@ -38,11 +38,14 @@ autor: Grzegorz Tereszkiewicz
 
 import random
 
+
 class Tablica:
     def __init__(self, rozmiarTablicy: int):
         # Inicjalizacja tablicy o podanym jako argument rozmiarze
         self.__rozmiarTablicy = rozmiarTablicy
-        self.__tablica: list[int] = [random.randint(1, 1000) for i in range(self.__rozmiarTablicy)]
+        self.__tablica: list[int] = [
+            random.randint(1, 1000) for i in range(self.__rozmiarTablicy)
+        ]
 
     def get_elementy_tablicy(self) -> list[int]:
         # Zwraca listę elementów tablicy
@@ -61,15 +64,13 @@ class Tablica:
         return sum(self.__tablica) // self.__rozmiarTablicy
 
 
-
-
 def main():
     # Główna funkcja programu, która testuje metody klasy Tablica
     rozmiarTablicy = int(input("================\nPodaj oczekiwany rozmiar tablicy: "))
     T = Tablica(rozmiarTablicy)
 
     # Wyświetlanie wszystkich elementów tablicy
-    for i in range (rozmiarTablicy):
+    for i in range(rozmiarTablicy):
         print(f"{i}: {T.get_elementy_tablicy()[i]}")
 
     # Wyszukiwanie liczby w tablicy
@@ -91,5 +92,5 @@ def main():
     print(f"================\nŚrednia wszystkich elementów: {T.licz_srednia()}")
 
 
-
-if __name__ == "__main__": main()
+if __name__ == "__main__":
+    main()

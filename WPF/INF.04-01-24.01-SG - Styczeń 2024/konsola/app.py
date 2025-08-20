@@ -36,7 +36,7 @@ def main():
 
     # Test poprawności PESEL'a
     print(f"Podany PESEL to: {pesel.getPesel}, jest on: {"True: Poprawny" if pesel.sprawdzPesel == True else "False: Niepoprawny"}")
-    
+
     # Test płci podanego PESEL'a
     print(f"Płeć podanego PESEL'a to: {pesel.sprawdzPlec()}")
 
@@ -44,17 +44,11 @@ if __name__ == "__main__": main()
 """
 
 
-
-
-
-
-
-
 class Pesel:
     """
     Klasa reprezentująca numer PESEL i udostępniająca metody do:
         - określenia płci (sprawdz_plec)
-        - weryfikacji sumy kontrolnej (sprawdz_sume_kontrolna)    
+        - weryfikacji sumy kontrolnej (sprawdz_sume_kontrolna)
     """
 
     def __init__(self, pesel: str):
@@ -71,9 +65,10 @@ class Pesel:
             - 'M' dla męskiej (10. cyfra nieparzysta)
             - '?' w przypadku nieprawidłowego formatu PESEL
         """
-        if len(self.pesel) != 11 or not self.pesel.isdigit(): return '?'
+        if len(self.pesel) != 11 or not self.pesel.isdigit():
+            return "?"
         dziesiata = int(self.pesel[-2])
-        return 'K' if dziesiata % 2 == 0 else 'M'
+        return "K" if dziesiata % 2 == 0 else "M"
 
     def sprawdz_sume_kontrolna(self) -> bool:
         """
@@ -84,14 +79,16 @@ class Pesel:
             2) M = suma % 10
             3) R = (0 jeśli M == 0, w przeciwnym wypadku 10 - M)
             4) porównanie R z ostatnią (11.) cyfrą PESEL
-        Zwraca True gdy się zgadza, False w przeciwnym razie lub przy błędnym formacie PESEL.        
+        Zwraca True gdy się zgadza, False w przeciwnym razie lub przy błędnym formacie PESEL.
         """
-        if len(self.pesel) != 11 or not self.pesel.isdigit(): return False
-        wagi = [1,3,7,9,1,3,7,9,1,3]
+        if len(self.pesel) != 11 or not self.pesel.isdigit():
+            return False
+        wagi = [1, 3, 7, 9, 1, 3, 7, 9, 1, 3]
         suma = sum(int(d) * w for d, w in zip(self.pesel[:10], wagi))
         M = suma % 10
         R = 0 if M == 0 else 10 - M
         return R == int(self.pesel[-1])
+
 
 def main():
     print("=== Walidator numeru PESEL ===")
@@ -108,13 +105,19 @@ def main():
 
     # 1) Płeć
     plec = pesel.sprawdz_plec()
-    if plec == 'K': print("Płeć: Kobieta")
-    elif plec == 'M': print("Płeć: Mężczyzna")
-    else: print("Płeć: nie można określić (nieprawidłowy format PESEL)")
+    if plec == "K":
+        print("Płeć: Kobieta")
+    elif plec == "M":
+        print("Płeć: Mężczyzna")
+    else:
+        print("Płeć: nie można określić (nieprawidłowy format PESEL)")
 
     # 2) Suma kontrolna
-    if pesel.sprawdz_sume_kontrolna(): print("Suma kontrolna: jest poprawna ⩗")
-    else: print("Suma kontrolna jest: NIEPOPRAWNA ⨉")
+    if pesel.sprawdz_sume_kontrolna():
+        print("Suma kontrolna: jest poprawna ⩗")
+    else:
+        print("Suma kontrolna jest: NIEPOPRAWNA ⨉")
 
-    
-if __name__ == "__main__": main()
+
+if __name__ == "__main__":
+    main()
