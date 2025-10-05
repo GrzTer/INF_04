@@ -46,6 +46,64 @@ Listing 1. Wzór dokumentacji funkcji
 * autor: <numer PESEL zdającego>
 * ****************************************************/
 """
+
+# class SortowaniePrzezWybieranie:
+#     def __init__(self, tablica: list[int]) -> None:
+#         self.tablica = tablica
+
+#     # /********************************************************
+#     # * nazwa funkcji: sortuj_malejaco
+#     # * parametry wejściowe: brak
+#     # * wartość zwracana: brak (sortuje tablicę w miejscu)
+#     # * autor: Grzegorz Tereszkiewicz
+#     # * ****************************************************/
+#     def sortuj_malejaco(self) -> None:
+#         n = len(self.tablica)
+#         for i in range(n):
+#             max_index = self.__znajdz_indeks_maksymalnej(i, n)
+#             self.tablica[i], self.tablica[max_index] = self.tablica[max_index], self.tablica[i]
+
+#     # /********************************************************
+#     # * nazwa funkcji: __znajdz_indeks_maksymalnej
+#     # * parametry wejściowe: start - początkowy indeks zakresu, end - końcowy indeks zakresu
+#     # * wartość zwracana: indeks największego elementu w podanym zakresie
+#     # * autor: Grzegorz Tereszkiewicz
+#     # * ****************************************************/
+#     def __znajdz_indeks_maksymalnej(self, start: int, end: int) -> int:
+#         max_index = start
+#         for j in range(start + 1, end):
+#             if self.tablica[j] > self.tablica[max_index]:
+#                 max_index = j
+#         return max_index
+
+#     def waliduj(self) -> bool:
+#         return len(self.tablica) == 10 and all(isinstance(x, int) for x in self.tablica)
+
+
+# def main() -> None:
+#     print("Podaj 10 liczb całkowitych do posortowania malejąco.")
+#     tablica = []
+#     while len(tablica) < 10:
+#         try:
+#             liczba = int(input(f"Podaj liczbę całkowitą ({len(tablica)+1}/10): "))
+#             tablica.append(liczba)
+#         except ValueError:
+#             print("To nie jest liczba całkowita. Spróbuj ponownie.")
+
+#     sorter = SortowaniePrzezWybieranie(tablica)
+#     if not sorter.waliduj():
+#         print("Błędne dane wejściowe. Program zakończy działanie.")
+#         return
+
+#     print("Tablica przed sortowaniem:", sorter.tablica)
+#     sorter.sortuj_malejaco()
+#     print("Tablica po sortowaniu malejąco:", sorter.tablica)
+
+
+# if __name__ == "__main__":
+#     main()
+
+
 class SortowaniePrzezWybieranie:
     def __init__(self, tablica: list[int]) -> None:
         self.tablica = tablica
@@ -56,19 +114,22 @@ class SortowaniePrzezWybieranie:
     # * wartość zwracana: brak (sortuje tablicę w miejscu)
     # * autor: Grzegorz Tereszkiewicz
     # * ****************************************************/
-    def sortuj_malejaco(self) -> None:
+    def sortuj_malejąco(self) -> None:
         n = len(self.tablica)
         for i in range(n):
-            max_index = self.__znajdz_indeks_maksymalnej(i, n)
-            self.tablica[i], self.tablica[max_index] = self.tablica[max_index], self.tablica[i]
+            max_index = self.__znajdz_index_maksymalnej(i, n)
+            self.tablica[i], self.tablica[max_index] = (
+                self.tablica[max_index],
+                self.tablica[i],
+            )
 
     # /********************************************************
-    # * nazwa funkcji: __znajdz_indeks_maksymalnej
-    # * parametry wejściowe: start - początkowy indeks zakresu, end - końcowy indeks zakresu
-    # * wartość zwracana: indeks największego elementu w podanym zakresie
+    # * nazwa funkcji: __znajdz_index_maksymalnej
+    # * parametry wejściowe: start - początkowy index zakresu, end - końcowy index zakresu
+    # * wartość zwracana: index największego elementu w podanym zakresie
     # * autor: Grzegorz Tereszkiewicz
     # * ****************************************************/
-    def __znajdz_indeks_maksymalnej(self, start: int, end: int) -> int:
+    def __znajdz_index_maksymalnej(self, start: int, end: int) -> int:
         max_index = start
         for j in range(start + 1, end):
             if self.tablica[j] > self.tablica[max_index]:
@@ -88,14 +149,13 @@ def main() -> None:
             tablica.append(liczba)
         except ValueError:
             print("To nie jest liczba całkowita. Spróbuj ponownie.")
-
     sorter = SortowaniePrzezWybieranie(tablica)
     if not sorter.waliduj():
         print("Błędne dane wejściowe. Program zakończy działanie.")
         return
 
     print("Tablica przed sortowaniem:", sorter.tablica)
-    sorter.sortuj_malejaco()
+    sorter.sortuj_malejąco()
     print("Tablica po sortowaniu malejąco:", sorter.tablica)
 
 
