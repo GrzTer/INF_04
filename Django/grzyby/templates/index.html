@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Grzyby</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>Grzybobranie czas zacząć</h1>
+    <img src="{% static 'borowik.jpg' %}">
+    <ol>
+        {% for grzyb in grzyby %}
+            <li>{{ grzyb }}</li>
+        {% endfor %}
+    </ol>
+</body>
+</html>
