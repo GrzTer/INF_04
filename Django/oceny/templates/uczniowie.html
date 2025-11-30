@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <h2>Nasi uczniowie</h2>
+    <ol>
+        {% for uczen in uczniowie %}
+            <li>{{ uczen }}</li>
+        {% endfor %}
+    </ol>
+    <a href="{% url 'nowy' 'uczen' %}">dodaj ucznia</a>
+{% endblock %}

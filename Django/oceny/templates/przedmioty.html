@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <h2>Przedmioty</h2>
+    <ol>
+        {% for przedmiot in przedmioty %}
+            <li>{{ przedmiot }}</li>
+        {% endfor %}
+    </ol>
+    <a href="{% url 'nowy' 'przedmiot' %}">nowy przedmiot</a>
+{% endblock %}

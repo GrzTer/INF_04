@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h1>Zestawienie ocen</h1>
+{% for ocena in oceny %}
+    <span>{{ ocena }}</span>
+    <a href="{% url 'edytuj' ocena.id %}"><button>edytuj</button></a><br>
+{% endfor %}
+<img src="{% static 'szkola.png' %}"><br>
+<a href="{% url 'uczniowie' %}">Lista uczniów</a>
+<a href="{% url 'przedmioty' %}">Lista przedmiotów</a>
+{% endblock %}
