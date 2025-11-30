@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>RYBY</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>Portal dla wędkarzy</h1>
+
+    <img src="{% static 'ryba.jpg' %}" alt="ryba">
+
+    <p>pole styl_zycia wartość 1 dla drapieżników, wartość 2 dla ryb spokojnego życia</p>
+
+    <ol>
+        {% for ryba in ryby %}
+            <li>{{ ryba }}</li>
+        {% endfor %}
+    </ol>
+
+    <h2>Gatunki ochronne</h2>
+
+    <ul>
+        {% for okres in okresy_ochronny %}
+            {% if okres.wymiar_ochrony > 0 %}
+                <li>{{ okres }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</body>
+</html>

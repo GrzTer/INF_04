@@ -1,0 +1,9 @@
+body {
+    background-color: darkcyan;
+    font-family: Verdana, sans-serif;
+}
+
+img {
+    float: right;
+    margin: 10px;
+}

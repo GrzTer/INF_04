@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from rybyapp.models import Ryby, Okres_ochronny
+
+admin.site.register(Ryby)
+admin.site.register(Okres_ochronny)
