@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bc736f73-ac34-4fb2-bc2b-b563c309cdc9" name="Changes" comment="feat: Add Ryby app models, migrations, views, and templates; wire up homepage and admin&#10;&#10;- Introduce Ryby and Okres_ochronny models with initial migration and admin registration.&#10;- Add index view rendering ryby.html, listing fish and protective periods (with filter in template).&#10;- Create templates and static assets (style.css, image reference) and load them via STATIC.&#10;- Add CSV seed files for ryby and okres_ochronny.&#10;- Update urls to expose index at root and normalize settings/entry files to double-quote style." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="36D6KbhRJ9O0Xzla8GiJbLuP77W" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
+    "git-widget-placeholder": "Django",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\INF_04\Django\ryby\rybyapp\static" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ryby" type="Python.DjangoServer" factoryName="Django server">
+      <module name="ryby" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-PY-252.27397.106" />
+        <option value="bundled-python-sdk-4e2b1448bda8-9a97661f3031-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.27397.106" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bc736f73-ac34-4fb2-bc2b-b563c309cdc9" name="Changes" comment="" />
+      <created>1764528731375</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1764528731375</updated>
+      <workItem from="1764528732389" duration="3031000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: Add Ryby app models, migrations, views, and templates; wire up homepage and admin&#10;&#10;- Introduce Ryby and Okres_ochronny models with initial migration and admin registration.&#10;- Add index view rendering ryby.html, listing fish and protective periods (with filter in template).&#10;- Create templates and static assets (style.css, image reference) and load them via STATIC.&#10;- Add CSV seed files for ryby and okres_ochronny.&#10;- Update urls to expose index at root and normalize settings/entry files to double-quote style.">
+      <option name="closed" value="true" />
+      <created>1764532283885</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764532283885</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: Add Ryby app models, migrations, views, and templates; wire up homepage and admin&#10;&#10;- Introduce Ryby and Okres_ochronny models with initial migration and admin registration.&#10;- Add index view rendering ryby.html, listing fish and protective periods (with filter in template).&#10;- Create templates and static assets (style.css, image reference) and load them via STATIC.&#10;- Add CSV seed files for ryby and okres_ochronny.&#10;- Update urls to expose index at root and normalize settings/entry files to double-quote style." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Add Ryby app models, migrations, views, and templates; wire up homepage and admin&#10;&#10;- Introduce Ryby and Okres_ochronny models with initial migration and admin registration.&#10;- Add index view rendering ryby.html, listing fish and protective periods (with filter in template).&#10;- Create templates and static assets (style.css, image reference) and load them via STATIC.&#10;- Add CSV seed files for ryby and okres_ochronny.&#10;- Update urls to expose index at root and normalize settings/entry files to double-quote style." />
+  </component>
+</project>
