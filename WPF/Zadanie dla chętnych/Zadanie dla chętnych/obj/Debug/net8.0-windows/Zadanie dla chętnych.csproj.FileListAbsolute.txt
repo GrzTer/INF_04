@@ -1,0 +1,21 @@
+D:\INF_04\WPF\Zadanie dla chętnych\Zadanie dla chętnych\bin\Debug\net8.0-windows\Zadanie dla chętnych.exe
+D:\INF_04\WPF\Zadanie dla chętnych\Zadanie dla chętnych\bin\Debug\net8.0-windows\Zadanie dla chętnych.deps.json
+D:\INF_04\WPF\Zadanie dla chętnych\Zadanie dla chętnych\bin\Debug\net8.0-windows\Zadanie dla chętnych.runtimeconfig.json
+D:\INF_04\WPF\Zadanie dla chętnych\Zadanie dla chętnych\bin\Debug\net8.0-windows\Zadanie dla chętnych.dll
+D:\INF_04\WPF\Zadanie dla chętnych\Zadanie dla chętnych\bin\Debug\net8.0-windows\Zadanie dla chętnych.pdb
+D:\INF_04\WPF\Zadanie dla chętnych\Zadanie dla chętnych\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\INF_04\WPF\Zadanie dla chętnych\Zadanie dla chętnych\obj\Debug\net8.0-windows\App.g.cs
+D:\INF_04\WPF\Zadanie dla chętnych\Zadanie dla chętnych\obj\Debug\net8.0-windows\Zadanie dla chętnych_MarkupCompile.cache
+D:\INF_04\WPF\Zadanie dla chętnych\Zadanie dla chętnych\obj\Debug\net8.0-windows\Zadanie dla chętnych_MarkupCompile.lref
+D:\INF_04\WPF\Zadanie dla chętnych\Zadanie dla chętnych\obj\Debug\net8.0-windows\MainWindow.baml
+D:\INF_04\WPF\Zadanie dla chętnych\Zadanie dla chętnych\obj\Debug\net8.0-windows\Zadanie dla chętnych.g.resources
+D:\INF_04\WPF\Zadanie dla chętnych\Zadanie dla chętnych\obj\Debug\net8.0-windows\Zadanie dla chętnych.GeneratedMSBuildEditorConfig.editorconfig
+D:\INF_04\WPF\Zadanie dla chętnych\Zadanie dla chętnych\obj\Debug\net8.0-windows\Zadanie dla chętnych.AssemblyInfoInputs.cache
+D:\INF_04\WPF\Zadanie dla chętnych\Zadanie dla chętnych\obj\Debug\net8.0-windows\Zadanie dla chętnych.AssemblyInfo.cs
+D:\INF_04\WPF\Zadanie dla chętnych\Zadanie dla chętnych\obj\Debug\net8.0-windows\Zadanie dla chętnych.csproj.CoreCompileInputs.cache
+D:\INF_04\WPF\Zadanie dla chętnych\Zadanie dla chętnych\obj\Debug\net8.0-windows\Zadanie dla chętnych.sourcelink.json
+D:\INF_04\WPF\Zadanie dla chętnych\Zadanie dla chętnych\obj\Debug\net8.0-windows\Zadanie dla chętnych.dll
+D:\INF_04\WPF\Zadanie dla chętnych\Zadanie dla chętnych\obj\Debug\net8.0-windows\refint\Zadanie dla chętnych.dll
+D:\INF_04\WPF\Zadanie dla chętnych\Zadanie dla chętnych\obj\Debug\net8.0-windows\Zadanie dla chętnych.pdb
+D:\INF_04\WPF\Zadanie dla chętnych\Zadanie dla chętnych\obj\Debug\net8.0-windows\Zadanie dla chętnych.genruntimeconfig.cache
+D:\INF_04\WPF\Zadanie dla chętnych\Zadanie dla chętnych\obj\Debug\net8.0-windows\ref\Zadanie dla chętnych.dll
