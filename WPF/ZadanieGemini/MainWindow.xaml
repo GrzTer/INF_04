@@ -1,0 +1,35 @@
+﻿<Window x:Class="ZadanieGemini.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZadanieGemini"
+        mc:Ignorable="d"
+        Title="Panel Temperatury" Height="450" Width="600" Background="MintCream">
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Margin="0, 0, 0, 20">
+            <TextBlock Text="Ustaw temperaturę:" FontSize="16" Margin="0, 0, 0, 5"/>
+            <Slider Name="sliderTemp" Minimum="-10" Maximum="40" TickFrequency="1" IsSnapToTickEnabled="True" Margin="0, 0, 0, 10"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0, 0, 0, 15">
+                <TextBlock Text="Wybrana wartość: " FontSize="14" FontWeight="Bold"/>
+                <TextBlock Text="{Binding ElementName=sliderTemp, Path=Value}" FontSize="14" FontWeight="Bold"/>
+                <TextBlock Text="°C" FontSize="14" FontWeight="Bold"/>
+            </StackPanel>
+            <Button Content="Zatwierdź" Background="SeaGreen" Foreground="White" Height="35" Width="150" FontSize="14" Click="Button_Zatwierdz_Click"/>
+        </StackPanel>
+        <Border Grid.Row="1" BorderBrush="Black" BorderThickness="1" Background="White">
+            <ListView Name="lvHistoria">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Godzina" Width="150" DisplayMemberBinding="{Binding Czas}"/>
+                        <GridViewColumn Header="Temperatura" Width="150" DisplayMemberBinding="{Binding Wartosc}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Border>
+    </Grid>
+</Window>
