@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36603.0 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadanie Gemini3", "Zadanie Gemini3.csproj", "{D87DB8F0-5724-4921-AACF-B4121265DDCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D87DB8F0-5724-4921-AACF-B4121265DDCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D87DB8F0-5724-4921-AACF-B4121265DDCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D87DB8F0-5724-4921-AACF-B4121265DDCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D87DB8F0-5724-4921-AACF-B4121265DDCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79A8EFE3-D95F-498A-BDC4-85F49019DE71}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,43 @@
+﻿<Window x:Class="Zadanie_Gemini3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zadanie_Gemini3"
+        mc:Ignorable="d"
+        Title="Magazyn" Height="450" Width="600" Background="Lavender" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="0, 0, 0, 20">
+            <TextBlock Text="Nazwa produktu:"/>
+            <TextBox Name="txtProdukt" Margin="0, 0, 0, 10"/>
+            <TextBlock Text="Kategoria:"/>
+            <ComboBox Name="cbKategoria" SelectedIndex="0" Margin="0,0,0,10">
+                <ComboBoxItem Content="Elektronika"/>
+                <ComboBoxItem Content="Odzież"/>
+                <ComboBoxItem Content="Inne"/>
+            </ComboBox>
+            <TextBlock Text="Ilość sztuk:"/>
+            <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 10">
+                <Slider Name="sliderIlosc" Minimum="1" Maximum="50" Width="200" IsSnapToTickEnabled="True" TickFrequency="1"/>
+                <TextBlock Text="{Binding ElementName=sliderIlosc, Path=Value}" FontWeight="Bold" Margin="10, 0, 0, 0"/>
+            </StackPanel>
+            <CheckBox Name="chkPriorytet" Content="Wysyłka natychmiastowa" FontWeight="Bold" Margin="0, 0, 0, 15"/>
+            <Button Content="DODAJ ZAMÓWIENIE" Background="BlueViolet" Foreground="White" Height="35" Width="200" HorizontalAlignment="Left" Click="Button_Click"/>
+        </StackPanel>
+        <ListView Name="lvZamowienia" Grid.Row="1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Produkt" Width="150" DisplayMemberBinding="{Binding Nazwa}"/>
+                    <GridViewColumn Header="Kategoria" Width="100" DisplayMemberBinding="{Binding Kat}"/>
+                    <GridViewColumn Header="Ilość" Width="50" DisplayMemberBinding="{Binding Ile}"/>
+                    <GridViewColumn Header="Status" Width="150" DisplayMemberBinding="{Binding Tryb}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
