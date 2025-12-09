@@ -1,0 +1,43 @@
+﻿<Window x:Class="Zadanie_Gemini2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zadanie_Gemini2"
+        mc:Ignorable="d"
+        Title="Podróż - Grzegorz Tereszkiewicz" Height="500" Width="600" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="LightBlue">
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Margin="0, 0, 0, 20">
+            <TextBlock Text="Dystans (km):"/>
+            <TextBox Name="txtDystans" Margin="0, 0, 0, 10"/>
+            <CheckBox Name="chkObieStrony" Content="Podróż w obie strony" FontWeight="Bold" Margin="0, 0, 0, 15"/>
+            <TextBlock Text="Rodzaj paliwa:"/>
+            <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 15">
+                <RadioButton Name="rbBenzyna" Content="Benzyna" IsChecked="True" Margin="0, 0, 0, 15"/>
+                <RadioButton Name="rbDiesel" Content="Diesel" Margin="0, 0, 0, 15"/>
+                <RadioButton Name="rbLPG" Content="LPG"/>
+            </StackPanel>
+            <TextBlock Text="Spalanie (1/100km):"/>
+            <StackPanel Orientation="Horizontal">
+                <Slider Name="sliderSpalanie" Minimum="4" Maximum="20" Width="200" IsSnapToTickEnabled="True" TickFrequency="0.5"/>
+                <TextBlock Text="{Binding ElementName=sliderSpalanie, Path=Value}" FontWeight="Bold" Margin="10, 0, 0, 0"/>
+                <TextBlock Text=" l" FontWeight="Bold"/>
+            </StackPanel>
+            <Button Content="OBLICZ KOSZT" Background="Navy" Foreground="White" Height="40" Margin="0, 20, 0, 0" Click="Button_Click"/>
+            </StackPanel>
+        <ListView Name="lvHistoria" Grid.Row="1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Paliwo" Width="100" DisplayMemberBinding="{Binding Paliwo}"/>
+                    <GridViewColumn Header="Dystans" Width="100" DisplayMemberBinding="{Binding Dystans}"/>
+                    <GridViewColumn Header="Spalanie" Width="80" DisplayMemberBinding="{Binding Spalanie}"/>
+                    <GridViewColumn Header="Koszt" Width="100" DisplayMemberBinding="{Binding Koszt}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
